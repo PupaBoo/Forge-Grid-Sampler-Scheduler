@@ -26,7 +26,7 @@ The script generates image grids in two modes: XY Grid and Batch Grid.
 ## ⚙️ Installation
 
 1. Clone the repository into your Forge `/extensions/` folder:
-   git clone https://github.com/USERNAME/Forge-Grid-Sampler-Scheduler
+   git clone https://github.com/PupaBoo/Forge-Grid-Sampler-Scheduler
 
 2. Navigate to the project directory:
    cd Forge-Grid-Sampler-Scheduler
