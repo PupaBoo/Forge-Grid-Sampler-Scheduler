@@ -41,7 +41,6 @@ def apply_params(p, sampler_label, scheduler_label):
         raise ValueError(f"Sampler '{sampler_label}' not found")
 
     p.sampler_index = sampler_index
-    # 🔧 Синхронизировано с индексом
     p.sampler_name = samplers[sampler_index].name
 
     p.scheduler = scheduler_label.strip()
@@ -152,7 +151,6 @@ def annotate_batch_image(img, sampler, scheduler, font_path=None):
     out.paste(img, (0, top_margin))
 
     draw = ImageDraw.Draw(out)
-    # 🔄 Вместо фиксированного y_text, рассчитываем центрирование
     line_h = sum(font.getmetrics())
     total_text_h = line_h * len(lines)
     y_text = top_margin + img.height + gap + \
@@ -310,7 +308,6 @@ class Script(scripts.Script):
         LIMIT = 16383
         auto_downscale = True
 
-        # 🌿 Режим Batch Grid
         if mode == "Batch Grid":
             pairs = [line.strip()
                      for line in pair_list.strip().splitlines() if "," in line]
@@ -364,7 +361,6 @@ class Script(scripts.Script):
 
             return safe_processed(p, [grid], sd, sd, 0.0, pos_prompt, neg_prompt, "✅ Batch Grid complete", "")
 
-        # 🌿 Режим XY Grid
         axis_x = "Sampler" if sampler_axis == "Axis X" else "Scheduler"
         axis_y = "Scheduler" if sampler_axis == "Axis X" else "Sampler"
 
@@ -400,7 +396,6 @@ class Script(scripts.Script):
                 cells.append(img)
                 i += 1
 
-        # 📐 Расчёт меток
         font_test = ImageFont.truetype(
             str(font_path), 42) if font_path else ImageFont.load_default()
         line_h = sum(font_test.getmetrics())
@@ -443,7 +438,6 @@ class Script(scripts.Script):
                 line_h = sum(font.getmetrics())
                 total_text_h = line_h * len(lines)
 
-                # 🧭 Центрируем по вертикали: в пределах ячейки высотой p.height
                 y_text = y + ((p.height - total_text_h) // 2)
 
                 x = 0
