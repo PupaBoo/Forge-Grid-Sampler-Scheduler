@@ -84,13 +84,15 @@ Ideas, bug reports, and pull requests are welcome on [GitHub](https://github.com
 
 ## 📸 Examples
 
-<div align="center" style="margin-bottom:40px;">
-  <h3>Batch Grid Preview</h3>
-  <img src="example/batchgrid.png" width="600">
-</div>
-
-<div align="center" style="margin-bottom:40px;">
-  <h3>XY Grid Preview</h3>
-  <img src="example/xygrid.png" width="600">
-</div>
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="example/batchgrid.png" height="360"><br>
+      <strong style="font-size:22px;">🧩 Batch Grid</strong>
+    </td>
+    <td align="center" style="padding-left:40px;">
+      <img src="example/xygrid.png" height="360"><br>
+      <strong style="font-size:22px;">🔄 XY Grid</strong>
+    </td>
+  </tr>
+</table>
