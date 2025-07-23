@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # 🔬 Forge Grid: Sampler × Scheduler
 
-> 💡 A script for generating image grids in Stable Diffusion Forge. Explore sampler and scheduler combinations, compare results, save individual cells, and achieve stable output—even with errors.
+> 💡 A script for generating image grids in Stable Diffusion Forge. Explore sampler and scheduler combinations, compare results, save individual cells, and achieve stable output — even with errors.
 
 
 ## 📝 Description
@@ -85,8 +84,7 @@ Ideas, bug reports, and pull requests are welcome on [GitHub](https://github.com
 
 ## 📸 Examples
 
-![Batch Grid Example](batchgrid.png)  
-![XY Grid Example](xygrid.png)
-=======
-# -Forge-Grid-Sampler-Scheduler
->>>>>>> fcdce735443dc615b4e8abbd9c43ba620345a5bf
+## 📸 Examples
+
+<img src="example/batchgrid.png" width="600">
+<img src="example/xygrid.png" width="600">
