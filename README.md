@@ -84,7 +84,5 @@ Ideas, bug reports, and pull requests are welcome on [GitHub](https://github.com
 
 ## 📸 Examples
 
-## 📸 Examples
-
 <img src="example/batchgrid.png" width="600">
 <img src="example/xygrid.png" width="600">
