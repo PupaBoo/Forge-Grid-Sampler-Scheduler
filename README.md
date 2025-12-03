@@ -25,7 +25,11 @@ The script generates image grids in two modes: XY Grid and Batch Grid.
 
 ## ⚙️ Installation
 
-1. Clone the repository into your Forge `/extensions/` folder:
+> ❗ **Important:** This is a *script*, not an extension.  
+> Forge only loads `.py` files placed directly inside the `scripts/` directory.
+> After cloning, you **must move the main `.py` file out of the cloned folder** and place it into `/scripts/`.
+
+1. Clone the repository into your Forge `/scripts/` folder:
    git clone https://github.com/PupaBoo/Forge-Grid-Sampler-Scheduler
 
 2. Navigate to the project directory:
@@ -33,8 +37,10 @@ The script generates image grids in two modes: XY Grid and Batch Grid.
 
 3. Install dependencies:
    pip install -r requirements.txt
+   
+4. Move the script file `forge_grid_sampler_scheduler.py` from the cloned directory directly into your Forge `/scripts/` folder.
 
-4. (Optional) Place the `Barlow-SemiBold.ttf` font in the `fonts/` folder for improved label display.
+5. (Optional) Place the `Barlow-SemiBold.ttf` font in the `scripts/` folder for improved label display.
 
 
 ## 🚀 Usage
