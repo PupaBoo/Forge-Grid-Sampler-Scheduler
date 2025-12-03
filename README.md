@@ -42,6 +42,8 @@ The script generates image grids in two modes: XY Grid and Batch Grid.
 
 5. (Optional) Place the `Barlow-SemiBold.ttf` font in the `scripts/` folder for improved label display.
 
+6. Restart Forge WebUI.
+
 
 ## 🚀 Usage
 
